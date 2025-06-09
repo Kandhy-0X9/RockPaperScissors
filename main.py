@@ -58,7 +58,6 @@ while playAgain:
     print("Your score is", humanScore)
         
 
-
     ##spacing 
     print()
     print()
@@ -73,3 +72,7 @@ while playAgain:
     
 print("Thanks for playing")
 print()
+
+print("Final Scores:")
+print("Computer:", computerScore)
+print("You:", humanScore)
