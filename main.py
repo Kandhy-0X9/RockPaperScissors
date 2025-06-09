@@ -7,6 +7,9 @@ print()
 print("Welcome User! \nAre you ready for Rock-Paper-Scissors!!")
 print()
 
+#initializing scores
+computerScore = 0
+humanScore = 0
 
 playAgain = True
 while playAgain:
@@ -48,6 +51,12 @@ while playAgain:
 
     else:
         print("You win!")
+        humanScore += 1
+
+    #show scores
+    print()
+    print("Your score is", humanScore)
+        
 
 
     ##spacing 
