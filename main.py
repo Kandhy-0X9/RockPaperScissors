@@ -36,18 +36,23 @@ while playAgain:
     ## If the computer and the user choose the same option, print "It's a tie!". If the computer wins, print "Computer wins!". If the user wins, print "You win!". 
     if computerChoice == humanChoice:
         print("It's a tie!")
+        
 
     elif computerChoice == 1 and humanChoice == 3:
         print("Computer wins!")
+        
 
     elif computerChoice == 2 and humanChoice == 1:
         print("Computer wins!")
+        
 
     elif computerChoice == 3 and humanChoice == 2:
         print("Computer wins!")
+        
 
     elif humanChoice > 3 or humanChoice < 0:
         print("That isn't allowed")
+        
 
     else:
         print("You win!")
@@ -73,6 +78,4 @@ while playAgain:
 print("Thanks for playing")
 print()
 
-print("Final Scores:")
-print("Computer:", computerScore)
-print("You:", humanScore)
+print("Final Scores:", humanScore)
