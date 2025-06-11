@@ -11,7 +11,7 @@ paper (2) beats rock (1)
 rock (1) beats scissors (3)
 scissors (3) beats paper (2)
 
-# things to add #
-Make code easier to understand
-make game accessible - easiers to understand and play
-maybe add other games
+# How to play
+1. run the game
+2. choose a number between 1 and 3
+3. enjoy the game
