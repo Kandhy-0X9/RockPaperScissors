@@ -1,11 +1,39 @@
 # 1. Import the random module.
 
 import random
-
+import time
+from faker import Faker
+fake = Faker()
+print(time.ctime)
+print()
 ##welcome the user
 print()
 print("Welcome User! \nAre you ready for Rock-Paper-Scissors!!")
 print()
+
+##user name for user
+
+#ask the user for his/her name
+
+name_E = input("What is your name? ").lower().replace(" ", "_")
+print()
+
+choice = input(" Do you want to use your real name? (Yes or No)").strip().lower()
+print()
+
+#create if statement 
+
+if choice == "yes":
+    randomNumber = str(random.randint(0, 100))
+    fakeName = name_E+randomNumber
+    
+
+elif choice == "no":   
+    Print = fake.name().lower().replace(" ", "_")
+    randomNumber2 = str(random.randint(0, 100))
+    fakeName = Print+randomNumber2
+    
+#end of user name
 
 #initializing scores
 computerScore = 0
@@ -15,7 +43,10 @@ playAgain = True
 while playAgain:
 
     # 2. Generate a random number between 1 and 3 and set it equal to a variable called computer (hint: use the randint() function) 
+    #welcome user
+    print("Welcome", fakeName,"!\n")
 
+    print()
     computerChoice = random.randint(1 , 3)
 
     # 3. Using input, get the user's choice where 1 is rock, 2, paper, and 3 is scissors. Store the user's input in a variable called user.
