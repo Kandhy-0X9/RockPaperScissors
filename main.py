@@ -56,10 +56,12 @@ while True:
 
 currentRound = 0
 
+#begin the game
+
 playAgain = True
 while playAgain and currentRound < totalRounds:
     currentRound += 1
-    print(f"\n--- Round {currentRound} of {totalRounds} ---")
+    print(f"\n--- Round {currentRound} of {totalRounds} ---\n")
     
     # load  highest streak from file
     
@@ -123,9 +125,6 @@ while playAgain and currentRound < totalRounds:
         if scoreStreak > highestStreak:   # <-- update highest streak
             highestStreak = scoreStreak
 
-    #show scores
-    print()
-    print("Your score is", humanScore)
         
 
     ##spacing 
@@ -135,10 +134,8 @@ while playAgain and currentRound < totalRounds:
     #play again
     #loop
 
-    if currentRound < totalRounds:
-        choice = input("Do you want to play again(yes/no): ").strip().lower()
-        if choice == "no":
-            playAgain = False
+    if currentRound == totalRounds:
+        playAgain = False
     else:
         print("Game over! You've reached the maximum number of rounds.\n")
     
@@ -153,5 +150,5 @@ with open(streakFile, "w") as file:
 
 print()
 print("Thanks for playing", fakeName)
-print("Goodbye!")
+print("\nGoodbye!\n")
 print(time.ctime())
