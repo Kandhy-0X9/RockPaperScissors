@@ -4,6 +4,7 @@ import random
 import time
 from faker import Faker
 import os
+import emoji
 #import files close
 
 fake = Faker()
