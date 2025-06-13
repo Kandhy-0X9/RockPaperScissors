@@ -61,6 +61,7 @@ currentRound = 0
 playAgain = True
 while playAgain and currentRound < totalRounds:
     currentRound += 1
+    time.sleep(2.5)
     print(f"\n--- Round {currentRound} of {totalRounds} ---\n")
     
     # load  highest streak from file
@@ -136,7 +137,6 @@ while playAgain and currentRound < totalRounds:
 
     if currentRound == totalRounds:
         playAgain = False
-    else:
         print("Game over! You've reached the maximum number of rounds.\n")
     
 
