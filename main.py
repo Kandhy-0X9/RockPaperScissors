@@ -9,9 +9,7 @@ import os
 fake = Faker()
 
 ##welcome the user
-print()
-print("Welcome User! \nAre you ready for Rock-Paper-Scissors!!")
-print()
+print("Welcome User! \nAre you ready for Rock-Paper-Scissors!!\n")
 
 ##user name for user
 
@@ -151,3 +149,5 @@ with open(streakFile, "w") as file:
 print()
 print("Thanks for playing", fakeName)
 print("\nGoodbye!\n")
+time.sleep(5)
+print(fakeName,", you still there!?")

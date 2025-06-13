@@ -15,3 +15,4 @@ scissors (3) beats paper (2)
 1. run the game
 2. choose a number between 1 and 3
 3. enjoy the game
+
