@@ -7,7 +7,7 @@ import os
 #import files close
 
 fake = Faker()
-print(time.ctime())
+
 ##welcome the user
 print()
 print("Welcome User! \nAre you ready for Rock-Paper-Scissors!!")
@@ -151,4 +151,3 @@ with open(streakFile, "w") as file:
 print()
 print("Thanks for playing", fakeName)
 print("\nGoodbye!\n")
-print(time.ctime())
