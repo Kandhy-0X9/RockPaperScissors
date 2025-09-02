@@ -5,6 +5,7 @@ import time
 from faker import Faker
 import os
 import emoji
+
 #import files close
 
 fake = Faker()
@@ -76,7 +77,6 @@ while playAgain and currentRound < totalRounds:
     # 2. Generate a random number between 1 and 3 and set it equal to a variable called computer (hint: use the randint() function) 
     #welcome user
     print("Welcome", fakeName,"!\n")
-    print("The programm is case sensitive, so please use lowercase letters for your answers.")
     print("\nLet's play Rock-Paper-Scissors!\n")
 
     print()
@@ -87,7 +87,7 @@ while playAgain and currentRound < totalRounds:
     print("Here is how to play. You pick a number that represents your choice\n 1 for Rock\n 2 for Paper\n 3 for Scissors")
     print()
 
-    humanChoice = int(input("So, what is your choice: "))
+    humanChoice = int(input("So, what is your choice: ").strip())
     print()
     print("The computer chose", computerChoice)
     print()
@@ -99,18 +99,22 @@ while playAgain and currentRound < totalRounds:
 
     ## If the computer and the user choose the same option, print "It's a tie!". If the computer wins, print "Computer wins!". If the user wins, print "You win!". 
     if computerChoice == humanChoice:
+        
         print("It's a tie!")
         scoreStreak = 0
 
     elif computerChoice == 1 and humanChoice == 3:
+        
         print("Computer wins!")
         scoreStreak = 0
 
     elif computerChoice == 2 and humanChoice == 1:
+        
         print("Computer wins!")
         scoreStreak = 0
 
     elif computerChoice == 3 and humanChoice == 2:
+        
         print("Computer wins!")
         scoreStreak = 0
 
@@ -119,6 +123,7 @@ while playAgain and currentRound < totalRounds:
         scoreStreak = 0
 
     else:
+        
         print("You win!")
         humanScore += 1
         scoreStreak += 1
@@ -136,7 +141,7 @@ while playAgain and currentRound < totalRounds:
 
     if currentRound == totalRounds:
         playAgain = False
-        print("Game over! You've reached the maximum number of rounds.\n")
+        print("\nGame over! You've reached the maximum number of rounds.\n")
     
 
 print("Your score is", humanScore)
